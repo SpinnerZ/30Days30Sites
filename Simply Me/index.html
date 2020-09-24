@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Theme Simply Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Importa CSS do framework Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Importa o meu CSS -->
+    <link rel="stylesheet" href="CSS/master.css">
+
+    <!-- Importa a fonte usada -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Começa a barra de navegação -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Aqui faz o botão com 3 traços que alterna entre as opções -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Texto da barra de navegação -->
+          <a href="#" class="navbar-brand">Me</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">WHO</a></li>
+            <li><a href="#">WHAT</a></li>
+            <li><a href="#">WHERE</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 3 Divs, cada uma com uma cor própria para fazer a divisão, sem se preocupar com bordas.
+    Div é block, então ocupa os espaços inteiros. Adicionando sequencialmente deixa uma embaixo da outra. -->
+
+    <!-- O bootstrap deixa o tamanho da div autodimensionável de acordo com o conteúdo -->
+    <div class="container-fluid bg-1 text-center">
+      <h3 class="margin">Who Am I?</h3>
+      <!-- A classe .img-responsive adiciona display:block na imagem, o que faz ela ficar alinhada à esquerda. Por isso adiciona-se o style="display: inline" -->
+      <img src="img/bird.jpeg" alt="Bird" class="img-responsive img-circle margin" style="display: inline">
+      <h3 class="margin">I'm an adventurer</h3>
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+      <h3 class="margin">What Am I?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <!-- O que determina o botão são as classes Booststrap. Tudo que estiver dentro da tag "a" fará parte do botão -->
+      <a href="#" class="btn btn-default btn-lg">
+        <!-- Span é um contêiner inline usado para marcar uma parte do texto ou documento. A diferença para o div é que ele é inline, e o div, block -->
+        <span class="glyphicon glyphicon-search"></span>
+        Search</a>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+      <h3 class="margin">Where To Find Me?</h3>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <!-- Adicionei width:100% para que a imagem ocupe todo o espaço quando ela for empilhada -->
+          <img src="img/birds1.jpeg" alt="Image of birds" class="img-responsive margin" style="width:100%">
+        </div>
+
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <img src="img/birds2.jpeg" alt="Image of birds" class="img-responsive margin" style="width:100%">
+        </div>
+
+        <div class="col-sm-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <img src="img/birds3.jpeg" alt="Image of birds" class="img-responsive margin" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+      <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
+    </footer>
+
+    <!-- Scripts sempre no final para melhorar o carregamento da página -->
+    <!-- Scripts do framework Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
